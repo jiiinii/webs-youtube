@@ -24,13 +24,13 @@
 
 .video__inner.search {
     min-height: 100vh;
-    
+
     .video {
         margin-bottom: 40px;
         border-radius: 10px;
         background-color: #111;
 
-        @media (max-width: 600px){
+        @media (max-width: 600px) {
             margin-bottom: 10px;
         }
 
@@ -51,30 +51,50 @@
         .video__info {
             padding: 10px 15px;
             color: #fff;
-    
+
             .title {
                 font-size: 1rem;
                 @include line-two;
             }
+
             .info {
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-end;
-                
+
                 .author {
                     @include line-one;
                     color: #666;
                     transition: all 0.3s;
-    
+
                     &:hover {
                         color: #fff;
                     }
                 }
+
                 .date {
                     font-size: 14px;
                     color: #666;
                 }
             }
+        }
+    }
+}
+
+.video__more {
+    button {
+        width: 100%;
+        border: 0;
+        padding: 20px;
+        background-color: var(--black100);
+        color: var(--white);
+        transition: all 0.3s;
+        margin-bottom: 20px;
+        cursor: pointer;
+        border-radius: 40px;
+
+        &:hover {
+            background-color: var(--black200);
         }
     }
 }
