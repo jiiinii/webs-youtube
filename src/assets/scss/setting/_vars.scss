@@ -1,7 +1,7 @@
 :root {
     --mainfont-nanum: "nanumSquareNeo";
     --mainfont-nexon: "nexonLv1";
-  
+
     --black: #000;
     --black100: #111;
     --black200: #272727;
@@ -15,7 +15,7 @@
     --blackAlpha300: #00000091;
     --blackAlpha400: #000000c3;
     --blackAlpha500: #000000eb;
-    
+
     --white: #fff;
     --white100: #efefef;
     --white200: #d9d9d9;
@@ -24,20 +24,21 @@
     --white500: #fff;
 
     --red: #f00;
-    
+    --red100: rgba(255, 0, 0, 0.441);
+
     // 폰트 셋팅
     font-family: var(--mainfont-nanum), var(--mainfont-nexon);
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    
+
     // 폰트 최적화
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%; // mobile 가로버전에서 글자 커지는 현상 막아줌
-  
+
     // mobile ver.
     @media (max-width: 800px) {
         font-size: 14px;
