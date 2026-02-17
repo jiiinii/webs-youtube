@@ -1,5 +1,5 @@
 #header {
-    position:fixed;
+    position: fixed;
     left: 0;
     right: 0;
     width: 260px;
@@ -27,18 +27,33 @@
     border-top: 1px solid var(--black100);
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
     #header {
         left: -260px;
+        background-color: var(--black);
+        transition: left 0.3s;
+
         h1 {
             position: fixed;
             left: 0;
             top: 0;
         }
+
+        .header__menu {
+            margin-top: 90px;
+        }
+
+        ;
+
+        &.active {
+            left: 0;
+        }
     }
+
     #main {
         padding-left: 0;
     }
+
     #footer {
         width: 100%;
         margin-left: 0;
