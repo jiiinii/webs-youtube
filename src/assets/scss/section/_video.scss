@@ -99,11 +99,11 @@
     }
 }
 
-// 비디오 페이지
+// 비디오 페이지 
 #videoViewPage {
     padding: 0;
 
-    @media(max-width: 800px) {
+    @media (max-width: 800px) {
         margin-top: 80px;
     }
 }
@@ -116,7 +116,7 @@
     }
 
     .video__info {
-        padding: 40%;
+        padding: 40px;
 
         .video__channel {
             display: flex;

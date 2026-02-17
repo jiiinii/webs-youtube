@@ -14,14 +14,11 @@ const Video = () => {
   const [videoDetail, setVideoDetail] = useState(null);
 
   useEffect(() => {
-    if (!videoId) return;
-
     fetchFromAPI(`videos?part=snippet,statistics&id=${videoId}`)
       .then((data) => {
-        console.log("videoId:", videoId);
         console.log(data);
-        setVideoDetail(data.items?.[0]);
-      });
+        setVideoDetail(data.items[0])
+      })
   }, [videoId]);
 
   return (
