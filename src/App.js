@@ -18,7 +18,7 @@ const Not = lazy(() => import("./pages/Not"));
 /**
  * Suspense
  * * 컴포넌트의 렌더링을 일시 중지하고 데이터 로딩을 기다릴 수 있게 해주는 React의 기능
- */
+ **/
 
 const App = () => {
   return (
